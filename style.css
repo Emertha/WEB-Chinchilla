@@ -1,0 +1,45 @@
+
+* {
+ box-sizing: 
+  border-box;
+}
+
+body {
+font-family: 'Amatic SC', cursive; 
+ margin: 0; 
+ padding: 0;
+} 
+
+/* Parallax */
+
+.foto1, .foto2, .foto3 {
+
+background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto1 {
+background-image: url(https://cdn.pixabay.com/photo/2015/04/15/06/01/chinchilla-723359_960_720.jpg);
+min-height: 100%;
+}
+
+.foto2 {
+background-image: url(https://cdn.pixabay.com/photo/2016/12/10/17/48/chinchilla-1897800_960_720.jpg);
+min-height: 400px;
+}
+
+.foto3 {
+background-image: url(https://www.bluecross.org.uk/sites/default/files/assets/images/114895lpr.jpg);
+min-height: 400px;
+}
+
+/* Parallax off */
+
+@media only screen and (max-device-width: 1024px) {
+   
+ .foto1, .foto2, .foto3 {
+        background-attachment: scroll;
+    }
+}
