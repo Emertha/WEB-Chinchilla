@@ -10,6 +10,9 @@ font-family: 'Amatic SC', cursive;
  padding: 0;
 } 
 
+.navigation {
+ style: none;
+}
 /* Parallax */
 
 .foto1, .foto2, .foto3 {
