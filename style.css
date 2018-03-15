@@ -54,6 +54,21 @@ min-height: 400px;
 
 /* Parallax off */
 
+.container-info {
+background-color: #f5daab;
+background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+-webkit-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+
+}
+.container-info2 {
+-webkit-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+background-color: #878a85;
+background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+}
 
 .display-container
 {position:relative;
