@@ -13,49 +13,24 @@
     
     
     <header>
-   <!-- <div class="navigation">
-         <div class="logo">
-<img src="http://simpleicon.com/wp-content/uploads/power-symbol-10.png" alt="logo">
- </div>
-        <ul>
-            <li><a href="#">Main</a></li>
-            <li><a href="#">More</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <div class="clear">
-</div>
-        </div> -->
-        
-       <!-- Navbar (sit on top) -->
-<div class="top">
-  <div class="navigation">
-    <a class="manu" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="menu">HOME</a>
-    <a href="#about" class="menu small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="menu small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="menu small"><i class="fa fa-envelope"></i> CONTACT</a>
-    
-  </div>
+   
+
+ <div class="topnav" id="myTopnav">
+  <a href="#go-foto1" class="active">Home</a>
+ <a href="#go-foto2">Contact</a> 
+  <a href="#go-foto3">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> 
 
 
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="smallscreen">
-    <a href="#about" class="menu" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="menu" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="menu" onclick="toggleFunction()">CONTACT</a>
-  </div>
 
-</div>
     </header>
     
     <main>
-<div class="foto1 display-container">
+<div class="foto1 display-container"><a id="go-foto1"></a>
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="xlarge wide">MY <span class="hide-small">WEBSITE</span> LOGO</span>
+    
   </div>
 </div>
         
@@ -68,9 +43,10 @@
 </div>
 </div>
 
-<div class="foto2 display-container">
+<div class="foto2 display-container"><a id="go-foto2"></a>
   <div class="display-middle">
-    <span class="xlarge wide">PORTFOLIO</span>
+    
+    </span>
   </div>
 </div>
 
@@ -84,40 +60,27 @@
 </div>
         
         
-<div class="foto3 display-container">
+<div class="foto3 display-container"><a id="go-foto3"></a>
   <div class="display-middle">
-    <span class="xlarge wide">PORTFOLIO</span>
+    
   </div>
 </div>
-
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+} 
+</script>
 </main>
         
     <footer>
         
        <p>© 2018 Copyright. Karolina Florek</p>
     </footer>
-    <script>
-        // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("navigation");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-    
+   
     </body>
-    </html>
+</html>
