@@ -1,4 +1,3 @@
-
 * {
  box-sizing: 
   border-box;
@@ -16,6 +15,7 @@ font-family: 'Amatic SC', cursive;
 background: linear-gradient(to left top, #808080 24%,#ffffff 71%); 
 height: 50px;
 font-size: 25px;
+
 }
 /* Parallax */
 
@@ -31,23 +31,30 @@ background-attachment: fixed;
 
 .foto1 {
 background-image: url(foto1.jpg);
-min-height: 100%;
-height: 100vh;
+min-height: 80%;
+height: 90vh;
 
 }
 
 .foto2 {
 background-image: url(foto2.jpg);
-min-height: 400px;
+min-height: 300px;
 }
 
 .foto3 {
 background-image: url(foto3.jpg);
-min-height: 400px;
+min-height: 500px;
 
 }
 
 /* Parallax off */
+
+h1{
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
 
 .container-info {
 background-color: #f5daab;
@@ -55,6 +62,8 @@ background-image: url("https://www.transparenttextures.com/patterns/cardboard.pn
 -webkit-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
 -moz-box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
 box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
+padding-top: 2%;
+padding-bottom: 2%;
 
 }
 .container-info2 {
@@ -63,6 +72,15 @@ box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
 box-shadow: 6px -1px 91px 46px rgba(0,0,0,0.64);
 background-color: #878a85;
 background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-right: 15%;
+  margin-left: 15%;
+
 }
 
 .display-container
